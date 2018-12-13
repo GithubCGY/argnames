@@ -1,0 +1,33 @@
+{
+    "name": "@chengaoyuan/argnames",
+    "version": "1.0.0",
+    "description": "获得函数参数名列表",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "mocha -r ts-register --colors test/*.ts",
+        "build": "node del.js && tsc -d"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GithubCGY/argnames.git"
+    },
+    "keywords": [
+        "argnames"
+    ],
+    "author": "chengaoyuan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GithubCGY/argnames/issues"
+    },
+    "homepage": "https://github.com/GithubCGY/argnames#readme",
+    "devDependencies": {
+        "@types/mocha": "^5.2.5",
+        "@types/node": "^10.12.12",
+        "mocha": "^5.2.0",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.2.2"
+    },
+    "files": [
+        "dist"
+    ]
+}
