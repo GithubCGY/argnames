@@ -1,6 +1,6 @@
 {
     "name": "@chengaoyuan/argnames",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "获得函数参数名列表",
     "main": "dist/index.js",
     "scripts": {
