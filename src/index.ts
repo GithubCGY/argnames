@@ -9,6 +9,9 @@ export default function argnames(func: Function): string[] {
     const matchArray = funcStr.match(argsMath) as RegExpMatchArray; // 匹配左右括号获取所有参数
     return matchArray[1]
         .split(",") // 分割参数
+        .filter(function(arg: string) {
+            return arg.trim(); // 过滤掉空的字段
+        })
         .map(function(arg: string) {
             return (arg.match(argMath) as RegExpMatchArray)[0]; // 匹配参数名
         });

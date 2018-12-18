@@ -6,5 +6,9 @@ describe("#index.ts", () => {
         it('argnames(function(a:string,b:number){}) should return ["a","b"]', () => {
             assert.deepEqual(argnames(function(a: string, b: number) {}), ["a", "b"]);
         });
+
+        it("argnames(function(){}) should return []", () => {
+            assert.deepEqual(argnames(function() {}), []);
+        });
     });
 });
