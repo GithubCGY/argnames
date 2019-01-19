@@ -1,7 +1,8 @@
 // [注释匹配](https://blog.csdn.net/sodino/article/details/51386113)
 
 const commentMath = /(\/\/.*)|(\/\*[\s\S]*?\*\/)/g;
-const argsMath = /function.*?\(([^)]*)\)/; //
+// const argsMath = /function.*?\(([^)]*)\)/; //
+const argsMath = /.*?\(([^)]*)\)/;
 const argMath = /[a-z0-9A-Z_]+/;
 
 export default function argnames(func: Function): string[] {
